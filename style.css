@@ -1,0 +1,160 @@
+/*zerar e definir elementos*/
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+ul, ol, li {
+	list-style: none;	/*display: inline-block já retira isso*/
+}
+
+body {
+	background-color: black;
+	color: white;
+	
+	font-family: sans-serif;
+	
+	width: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo{
+	height: 125px;
+	width: 125px;
+}
+
+li {
+	display: inline-block;
+	margin: 20px;
+}
+
+a {
+	color: #80d8ff;
+}
+
+a:hover {
+	color: #FFF;
+	transition: 0.3s all;			/*300ms em todos do index*/
+}
+
+
+#inscreva-se-botao {
+	border: 2px solid #80d8ff;
+	padding: 10px;
+	border-radius: 20px;
+}
+
+#inscreva-se-botao:hover {
+	background-color: #80d8ff;
+	color: white;
+}
+
+h1 {	/*os links da header*/
+	font-weight: 200;
+}
+
+main {	/*conteúdo um do lado da outra*/
+	display: flex;
+	flex-direction: row;
+}
+
+aside {
+	margin-top: 90px;
+}
+
+h2 {
+	font-size: 60px;
+	line-height: 53px;
+	font-weight: medium;
+}
+
+span {
+	color: #80d8ff;;
+}
+
+p {
+	line-height: 16px;
+	max-width: 420px;	/*largura máxima do parágrafo*/
+	font-weight: 200;
+	margin-top: 10px;
+	text-align: justify;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	width: 75%;
+	margin-top: 10px;	/*para ficar igual a margem do elemento anterior*/
+}
+
+form [type="submit"] {
+	height: 40px;
+	width: 35%;
+	line-height: 10px;
+	background-color: #80d8ff;
+	color: black;
+	font-weight: bold;
+}
+
+form [type="submit"]:hover {
+	cursor: pointer;
+}
+
+input {
+	margin-top: 20px;	/*margem no topo para todos*/
+	height: 15px;
+	padding: 15px;
+	border-radius: 15px;
+	border: none;
+	font-size: 15px;
+}
+
+.img-de-fundo {
+	height: 380px;
+	width: 600px;
+	margin-left: 80px;
+	margin-top: 70px;
+}
+
+@media screen and (max-width: 760px){
+
+    header{
+        flex-direction: column;
+    }
+
+    main{
+        flex-direction: column;
+		align-items: center;
+    }
+
+    h2{
+        font-size: 38px;
+		text-align: center;
+    }
+
+    form{
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    input{
+        align-self: center;
+    }
+
+    img{
+        display: none;
+    }
+
+    ul{
+        text-align: center;
+    }
+}
